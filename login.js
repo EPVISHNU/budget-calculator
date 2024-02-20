@@ -13,7 +13,7 @@ function register(){
         else{
             localStorage.setItem(customer.name,JSON.stringify(customer))
             alert('ID added successfully.')
-            window.location='./login.html'
+            window.location='./index.html'
         }
     }
 }
@@ -38,7 +38,7 @@ function login(){
               if(cust.pass == logpass.value){
                 sessionStorage.setItem("users",JSON.stringify(cust))
                 alert(`Welcome ${logname.value}`)
-                window.location='./index.html'
+                window.location='./main.html'
 
                 logname.value=""
                 logpass.value=""
@@ -144,7 +144,7 @@ function minus(){
 
 function logout(){
     sessionStorage.clear()
-    window.location='./login.html'}
+    window.location='./index.html'}
 
 
 function clearAll(){
